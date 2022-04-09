@@ -2,7 +2,6 @@
 from ast import Break
 from random import randint
 
-#fuck cover letters
 
 def ComputerMugging():
     while True:
@@ -12,10 +11,6 @@ def ComputerMugging():
             break
         elif playerChoice != ("Wallet"):
             print ("I didn't ask for", playerChoice + "!" " Show me your wallet!")        
-
-
-
-
 
 
 
@@ -33,7 +28,7 @@ while True:
     #set playerChoice to True
     playerChoice = input(WillSmith)
     if not playerChoice in t:
-        print ("Drive off a cliff and try again")
+        print ("That didn't work! You could have typed Gun for all I care!")
         continue
        
     computer = t[randint(0,3 if pandoraBox else 2)]
@@ -66,6 +61,3 @@ while True:
     elif playerChoice == "Gun":
         print("Computer brought", computer, "to a gun fight")
         pandoraBox = True
-
-    else:
-        print("That didn't work! You could have typed Gun for all I care!")
